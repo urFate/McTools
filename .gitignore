@@ -1,2 +1,5 @@
 mcping
-go.sum
+
+
+[![Go](https://github.com/urFate/McPing/actions/workflows/go.yml/badge.svg)](https://github.com/urFate/McPing/actions/workflows/go.yml)
+[![issues](https://img.shields.io/github/issues/urFate/McPing)]

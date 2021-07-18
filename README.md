@@ -25,10 +25,10 @@ Get MC server MOTD, ping, IP address details and more.
  1. [Download](https://github.com/urFate/McPing/releases/latest) required package
  2. Install package
 	 Debian based systems:
-	 `sudo apt install mcping-1.0.deb`
+	 `sudo apt install mcping-1.0-Linux.deb`
 	 
 	 Other Linux:
-	 `tar -xf mcping-1.0.tar.gz -C /usr/bin/`
+	 `tar -xf mcping-1.0-Linux.tar.gz -C /usr/bin/`
 3. Done! :)
 
 ### License

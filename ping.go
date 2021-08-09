@@ -28,7 +28,7 @@ var (
 )
 
 func McPing() {
-	if flag.Arg(0) == "" {
+	if flag.NArg() == 0 {
 		flag.Usage()
 		os.Exit(1)
 	}

@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"os"
 	"time"
 
 	"github.com/Lukaesebrot/mojango"
@@ -11,6 +12,11 @@ import (
 
 func User() {
 	client := mojango.New()
+
+	if flag.Arg(0) == "" {
+		flag.Usage()
+		os.Exit(1)
+	}
 
 	uuid, err := client.FetchUUID(flag.Arg(0))
 	if err != nil {

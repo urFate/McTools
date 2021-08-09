@@ -9,6 +9,7 @@ import (
 	"log"
 	"net"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -27,6 +28,11 @@ var (
 )
 
 func McPing() {
+	if flag.Arg(0) == "" {
+		flag.Usage()
+		os.Exit(1)
+	}
+
 	host := lookupMC(flag.Arg(0))
 
 	conn, err := net.Dial("tcp", host[0])

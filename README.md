@@ -1,4 +1,4 @@
-# McPing
+# McTools
 
 <p align="center">
   <img src="https://github.com/urFate/McPing/actions/workflows/go.yml/badge.svg">
@@ -9,34 +9,25 @@
   <img src=https://img.shields.io/github/license/urFate/McPing>
 </p>
 <p align="center">
-	Simple minecraft ping console tool
+	A terminal tool kit for block game
 </p>
 <p align="center">
-	Get MC server MOTD, ping, IP address details and more.
+	Get minecraft server & user information quickly
 </p>
 <p align="center">
-	<img src="https://media.giphy.com/media/w639pY39yNXXf1mTxF/giphy.gif">
+	<img src="https://media.giphy.com/media/oiGFw1h13aBOHHtusE/giphy.gif">
 </p>
+
+## Usage
+
+> HINT: Installation package automatically addes aliases `mcping` & `mcuser` into your shell config, but also you can use `mctools` flags
+
+* ```mcping hypixel.net``` - Shows minecraft server MOTD
+* ```mcuser Dinnerbone``` - Shows user profile
 
 ## Installation
 
-> IMPORTANT: McPing supports only Linux OS! Other systems support will be added in future.
-
-1. [Download](https://github.com/urFate/McPing/releases/latest) required package 
-
-2. Install package
-
-	 Debian based systems:
-	 
-	 
-	 `sudo apt install mcping-1.0-Linux.deb`
-
-	 Other Linux:
-	 
-	 
-	 `tar -xf mcping-1.0-Linux.tar.gz -C /usr/bin/`
-
-3. Done! :)
+Look at [INSTALL.md](https://github.com/urFate/McTools/blob/master/INSTALL.md)
 
 ### License
 [Apache-2.0](https://github.com/urFate/McPing/blob/master/LICENSE)

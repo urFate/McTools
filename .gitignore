@@ -1,3 +1,2 @@
 mctools
-/debian/
-/debian/*
+/package/*

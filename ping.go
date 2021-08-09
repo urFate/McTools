@@ -39,7 +39,7 @@ func McPing() {
 	if err != nil {
 		log.Default().Fatalf("[Error] Cannot connect to the server \"%v\"", flag.Arg(0))
 	}
-	status, delay, err := pingAndList(host[0], mcnet.WrapConn(conn), 758)
+	status, delay, err := pingAndList(host[0], mcnet.WrapConn(conn), 340)
 	if err != nil {
 		log.Fatalf("[Error] %v\n", err)
 	}

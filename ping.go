@@ -37,7 +37,9 @@ func McPing() {
 
 	conn, err := net.Dial("tcp", host[0])
 	if err != nil {
-		log.Default().Fatalf("[Error] Cannot connect to the server \"%v\"", flag.Arg(0))
+		fmt.Printf("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \033[31mOFFLINE\033[0m \n┃ %v\n┃\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n",
+			flag.Arg(0))
+		os.Exit(0)
 	}
 	status, delay, err := pingAndList(host[0], mcnet.WrapConn(conn), 340)
 	if err != nil {

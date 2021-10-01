@@ -20,17 +20,17 @@ func User() {
 
 	uuid, err := client.FetchUUID(flag.Arg(0))
 	if err != nil {
-		log.Fatalln(err)
+		log.Fatalf("\033[33mFailed to fetch user %v !", flag.Arg(0))
 	}
 
 	profile, err := client.FetchProfile(uuid, true)
 	if err != nil {
-		log.Fatalln(err)
+		log.Fatalf("\033[33mFailed to fetch user %v !", flag.Arg(0))
 	}
 
 	hist, err := client.FetchNameHistory(uuid)
 	if err != nil {
-		log.Fatalln(err)
+		log.Fatalf("\033[33mFailed to fetch user %v !", flag.Arg(0))
 	}
 
 	fmt.Printf("┏━━━━━━━━━━━━━━━ Profile ━━━━━━━━━━━━━━━\n┃ Name: %v\n┃ UUID: %v\n┣━━━━━━━━━━━━━ Name History ━━━━━━━━━━━━",
